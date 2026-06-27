@@ -20,26 +20,25 @@ The system combines persistent memory, multimodal input support, and Retrieval-A
 ## 🏗️ Architecture
 
 
-User (Discord / Telegram)
-          │
-          ▼
-   Bot Layer (Python)
-          │
-          ▼
- Backend Orchestrator (Gemini Service)
-          │
-   ┌──────┴─────────┐
-   ▼                ▼
-MySQL           ChromaDB
-(Chat Memory)   (Vector Search)
-   │                │
-   └──────┬─────────┘
-          ▼
-   Google Gemini LLM
-          │
-          ▼
-     AI Response
-
+- User (Discord / Telegram)
+-        │
+-          ▼
+-   Bot Layer (Python)
+-          │
+-          ▼
+- Backend Orchestrator (Gemini Service)
+-          │
+-   ┌──────┴─────────┐
+-   ▼                ▼
+- MySQL           ChromaDB
+- (Chat Memory)   (Vector Search)
+-   │                │
+-   └──────┬─────────┘
+-          ▼
+-   Google Gemini LLM
+-          │
+-          ▼
+-     AI Response
 
      
 ## ⚙️ Tech Stack
